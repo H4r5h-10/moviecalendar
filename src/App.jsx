@@ -17,7 +17,6 @@ function App() {
         < Route exact path="/theatres" element={<Theatres/>}/>
         < Route exact path="/shows" element={<Shows/>}/>
         < Route exact path="/theatreshows" element={<TheatreShows/>}/>
-        < Route exact path="/me" element={<Me/>}/>
       </Routes>
     </Router>
   )
