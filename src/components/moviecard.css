@@ -8,15 +8,12 @@
 .card-front:hover img{
     filter: grayscale();
 }
-.f{
-    border: 1px solid black;
-    /* width: 90vw; */
-}
 .f-theatres{
     width: 90vw;
 }
 .f-show{
     width: 20vw;
+    color: white;
 }
 .card-con{  
     position: relative;

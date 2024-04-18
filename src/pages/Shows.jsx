@@ -71,18 +71,6 @@ export const Shows = () => {
             </div>
         ) : (
           <div>
-            <div className="card-container">
-              {theatreList["Wave Cinemas"].length > 0 ? (
-                <div className="cards">
-                  <h2>Wave Cinemas</h2>
-                  {theatreList["Wave Cinemas"].map((movie) => (
-                    <TheatreShowCard theatre={movie} name={"Wave Cinemas"} />
-                  ))}
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
             <div className="card-conatiner">
               {theatreList["PVR Cinemas"].length > 0 ? (
                 <div className="cards">
@@ -95,6 +83,19 @@ export const Shows = () => {
                 ""
               )}
             </div>
+            <div className="card-container">
+              {theatreList["Wave Cinemas"].length > 0 ? (
+                <div className="cards">
+                  <h2>Wave Cinemas</h2>
+                  {theatreList["Wave Cinemas"].map((movie) => (
+                    <TheatreShowCard theatre={movie} name={"Wave Cinemas"} />
+                  ))}
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
+            
             <div className="card-container">
               {theatreList["Cinepolis"].length > 0 ? (
                 <div className="cards">
