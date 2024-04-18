@@ -2,9 +2,9 @@ import React from 'react'
 import './moviecard.css'
 import { Link, Navigate } from 'react-router-dom'
 
-export const MovieCard = ({movie}) => {
+export const MovieCard = ({movie, theatreid, theatrename}) => {
   return (
-    <Link to='/shows' state={{stateParam: movie.movie_id, moviename: movie.movie_name, lead:movie.lead_actor, director:movie.director}} className='links'><div className="card-con">
+    <Link to='/shows' state={{stateParam: movie.movie_id, moviename: movie.movie_name, lead:movie.lead_actor, director:movie.director, theatreid:theatreid, theatrename: theatrename}} className='links'><div className="card-con">
     <div className="card-front" key={movie.movie_id}>
       <div className="image">
         {

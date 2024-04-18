@@ -12,8 +12,6 @@ const Header = () => {
         <nav ref={navRef}>
             <Link className='links' to={'/'}>Movies</Link>
             <Link className='links' to={"/theatres"}>Theatres</Link>
-            <Link className='links' to={"/me"}>Bookings</Link>
-
         </nav>
     </header>
   )

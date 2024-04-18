@@ -1,8 +1,7 @@
 import React from "react";
 import "./moviecard.css";
 
-const TheatreShowCard = ({ theatre, name }) => {
-  document.querySelector(".f-show")
+const TheatreShowCard = ({ theatre }) => {
   return (
     <div className="card-con">
       <div className="card-front">

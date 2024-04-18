@@ -9,7 +9,7 @@ import MovieCard from "../components/MovieCard.jsx";
 export const TheatreShows = () => {
   const [movieList, setMovieList] = useState({});
   const [loading, setLoading] = useState(true);
-  const { stateParam, theatrename } = useLocation().state;
+  const { stateParam, theatrename} = useLocation().state;
 
   useEffect(()=>{
     axios.get(`https://movie-apis-thqb.onrender.com/api/theatres/movies/${stateParam}`)
@@ -32,7 +32,7 @@ export const TheatreShows = () => {
         {movieList.length>0?
           <div className="cards">
             {movieList.map((movie) => (
-              <MovieCard movie={movie} key={movie.id}/>
+              <MovieCard movie={movie} key={movie.id} theatreid={stateParam} theatrename={theatrename}/>
             ))}
           </div>:<div className="no">No Shows Available</div>
         }
