@@ -9,7 +9,7 @@ export const MovieCard = ({movie, theatreid, theatrename}) => {
       <div className="image">
         {
           <img
-            src={'https://rukminim2.flixcart.com/image/850/1000/jy4q3680/poster/s/z/k/large-kabir-singh-movie-jumbo-poster-for-room-office-kabir-singh-original-imafgej6t5ny9ezt.jpeg?q=90&crop=false'}
+            src={movie.poster?movie.poster:'https://rukminim2.flixcart.com/image/850/1000/jy4q3680/poster/s/z/k/large-kabir-singh-movie-jumbo-poster-for-room-office-kabir-singh-original-imafgej6t5ny9ezt.jpeg?q=90&crop=false'}
             alt={`${movie.movie_name} Poster`}
             width="200"
             height="300"
