@@ -4,7 +4,6 @@ import { BrowserRouter as Router,  Routes, Route} from 'react-router-dom';
 import Header from './components/Header.jsx';
 import {Theatres} from './pages/Theatres.jsx';
 import {Movies} from './pages/Movies.jsx';
-import Me from './pages/Me.jsx';
 import Shows from './pages/Shows.jsx';
 import TheatreShows from './pages/TheatreShows.jsx'
 
